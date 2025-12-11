@@ -1,0 +1,54 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ html,
+ body {
+     width: 100%;
+     height: 100%;
+     background-color: #111;
+     /* overflow: hidden; */
+ }
+
+ :root {
+    --color:red;
+    --backgrounColor:black;
+    --x:300px;
+    --y:300px;
+ }
+
+ main {
+     overflow: hidden;
+     height: 100vh;
+     width: 100%;
+ }
+
+ main video {
+     width: 100%;
+     height: 100%;
+     background-clip: text;
+ }
+
+ .box {
+     position: absolute;
+     /* left: 50%;
+     top: 50%; */
+     z-index: 2;
+     width: 100%;
+     height: 100%;
+     background: radial-gradient(150px at var(--x) var(--y),  rgba(255, 255, 255, 0), #111111f7);
+ 
+ }
+
+ .text{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: var(--color);
+    background-color: var(--backgrounColor);
+ }
